@@ -17,6 +17,7 @@ Under Redirect URIs enter 'http://127.0.0.1:9999' then 'Add' and 'Save'
 Replace 'client_id', 'client_secret', and 'username' values in creds.py with yours
 ```
 ## Running:
+#### On your first run your web browser will open to accept the token. You shouldn't have to accept again after this.
 ```
 python now_playing.py
 ```
