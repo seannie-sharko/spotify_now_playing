@@ -20,3 +20,4 @@ Replace 'client_id', 'client_secret', and 'username' values in creds.py with you
 ```
 python now_playing.py
 ```
+![screenshot](/image/screenshot.png)
