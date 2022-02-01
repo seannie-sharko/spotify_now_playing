@@ -7,12 +7,16 @@ spotify = spotipy.Spotify(auth=token)
 current_track = spotify.current_user_playing_track()
 
 try:
-    print("Now Playing: " + \
-    f"{current_track['item']['artists'][0]['name']}" + \
-    " - " + \
-    "'" + f"{current_track['item']['name']}" + "'" + \
-    " | " + \
-    " Album: " + \
-    f"{current_track['item']['album']['name']}")
+    while current_track['is_playing'] == True:
+        print("Now Playing: " + \
+        f"{current_track['item']['artists'][0]['name']}" + \
+        " - " + \
+        "'" + f"{current_track['item']['name']}" + "'" + \
+        " | " + \
+        " Album: " + \
+        f"{current_track['item']['album']['name']}")
+        break
+    else:
+        print("Song Paused")
 except TypeError:
     print("Now Playing: No song found... :(")
