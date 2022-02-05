@@ -22,6 +22,7 @@ pip3 install spotipy
 ## Running:
 #### On your first run your web browser will open to accept the token. The token lasts ~24 hrs.
 ```
+cd spotify_now_playing
 python now_playing.py
 ```
 ![screenshot](/image/screenshot.png)
