@@ -1,3 +1,9 @@
+"""
+This is a simple script to display the current track
+you're listening to in Spotify using Spotipy.
+---Spotipy: https://github.com/plamere/spotipy
+"""
+
 import spotipy
 import spotipy.util as util
 import creds
@@ -24,7 +30,7 @@ Parameters:
 
 spotify = spotipy.Spotify(auth=token)
 current_track = spotify.current_user_playing_track()
- 
+
 def now_playing():
     try:
         while current_track['is_playing'] == True:
