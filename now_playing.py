@@ -1,10 +1,10 @@
-from datetime import datetime
 import os
 import sys
 import spotipy
 import spotipy.util as util
 sys.path.insert(0, f'/Users/{os.getenv("USER")}/scripts/python')
 import creds
+from datetime import datetime
 
 def get_spotify_token(cred_file):
     """Retrieve the OAuth token for Spotify authentication."""
